@@ -8,9 +8,6 @@ dj-paginator
 .. image:: https://travis-ci.org/pydanny/dj-paginator.png?branch=master
     :target: https://travis-ci.org/pydanny/dj-paginator
 
-.. image:: https://coveralls.io/repos/pydanny/dj-paginator/badge.png?branch=master
-    :target: https://coveralls.io/r/pydanny/dj-paginator?branch=master
-
 A super-simple set of pagination tools for Django 1.8+
 
 Documentation
