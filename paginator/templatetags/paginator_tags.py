@@ -6,14 +6,15 @@ from paginator.paginators import paginate
 register = template.Library()
 
 PAGINATOR_THEME = getattr(settings, "PAGINATOR_THEME", "bootstrap")
+BASIC_THEME = 'paginator/{}/paginator.html'.format(PAGINATOR_THEME)
+BOOTSTRAP_THEME = 'paginator/bootstrap/paginator.html'
 
-theme = 'paginator/{}/paginator.html'.format(PAGINATOR_THEME)
 
-
-@register.inclusion_tag('paginator/bootstrap/paginator.html', takes_context=True)
+@register.inclusion_tag(BOOTSTRAP_THEME, takes_context=True)
 def bootstrap_paginator(context):
     return paginate(context)
 
-@register.inclusion_tag(theme, takes_context=True)
+
+@register.inclusion_tag(BASIC_THEME, takes_context=True)
 def paginator(context):
     return paginate(context)
