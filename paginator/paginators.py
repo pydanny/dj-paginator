@@ -2,6 +2,7 @@ from django.conf import settings
 
 DEFAULT_WINDOW = getattr(settings, 'PAGINATOR_DEFAULT_WINDOW', 4)
 
+
 def paginate(context, window=DEFAULT_WINDOW, hashtag=''):
     """
     Renders the ``pagination/pagination.html`` template, resulting in a
