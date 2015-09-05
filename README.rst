@@ -34,7 +34,7 @@ Install dj-paginator::
 In your installed apps::
 
     INSTALLED_APPS = [
-        paginator
+        'paginator'
     ]
 
 In your list view::
@@ -45,7 +45,7 @@ In your list view::
 
 In your list view template::
 
-    {% load paginator %}
+    {% load paginator_tags %}
 
     {% paginator %}
 
@@ -58,7 +58,7 @@ Switching to a new theme method 1
 ::
 
     # Currently defaults to bootstrap.
-    # I'll add foundation tomorrow.
+    # I'll add foundation soon.
     PAGINATOR_THEME = 'foundation'
 
 Switching to a new theme method 2
@@ -66,7 +66,7 @@ Switching to a new theme method 2
 
 ::
 
-    {% load paginator %}
+    {% load paginator_tags %}
 
     {# Is the default #}
     {% bootstrap_paginator %}
