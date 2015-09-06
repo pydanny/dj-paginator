@@ -1,4 +1,4 @@
-from django.conf.global_settings import *
+from django.conf.global_settings import *  # noqa
 
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG

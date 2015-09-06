@@ -2,8 +2,6 @@ from django.test import TestCase
 
 from django.core.paginator import Paginator
 
-from paginator.paginators import paginate
-
 
 class PaginatorTestCase(TestCase):
 
