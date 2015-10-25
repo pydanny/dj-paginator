@@ -3,6 +3,17 @@
 History
 -------
 
+0.2.2 ???
+++++++++++++++++++
+
+* Attempted to create simple paginator
+* Readme update
+
+0.2.2 (2015-10-18)
+++++++++++++++++++
+
+* Use ellipsis for divider
+
 0.2.1 (2015-09-04)
 ++++++++++++++++++
 

@@ -1,7 +1,7 @@
 from django.conf import settings
 from django import template
 
-from paginator.paginators import paginate
+from paginator.paginators import paginate, simple_paginate
 
 register = template.Library()
 
@@ -12,9 +12,9 @@ BOOTSTRAP_THEME = 'paginator/bootstrap/paginator.html'
 
 @register.inclusion_tag(BOOTSTRAP_THEME, takes_context=True)
 def bootstrap_paginator(context):
-    return paginate(context)
+    return simple_paginate(context)
 
 
 @register.inclusion_tag(BASIC_THEME, takes_context=True)
 def paginator(context):
-    return paginate(context)
+    return simple_paginate(context)
