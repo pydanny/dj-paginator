@@ -13,7 +13,7 @@ A super-simple set of pagination tools for Django 1.8+
 Documentation
 ------------------
 
-The full documentation will soon be at https://dj-paginator.readthedocs.org.
+The full documentation will soon be at https://dj-paginator.readthedocs.io.
 
 Features
 --------
